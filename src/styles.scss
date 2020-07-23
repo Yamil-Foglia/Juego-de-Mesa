@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Russo+One&display=swap');
+$fontComfortaa: 'Comfortaa', cursive;
+$fontRussoOne: 'Russo One', sans-serif;
+
+.image-position{
+    width: 200px;
+    height: 200px;
+}
+
+.image-position-none{
+    width: 100px;
+    height: 100px;
+}
+
+.nv-image-position{
+    width: 50px;
+    height: 50px;
+}
+
+.bk-container{
+   background-image: linear-gradient(rgb(73, 241, 177), yellow);
+}
+
+.bk-player{
+    //background:rgba(211, 211, 211, 0.377)
+}
+
+.btn-ready{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.pos-fix{
+    position: fixed;
+}
+
+h4{
+    font-family: $fontRussoOne;
+}
+
+.ta-c{
+    text-align: center;
+}
+
+.ta-r{
+    text-align: right;
+}
+
+.ta-l{
+    text-align: left;
+}
+
+.mt-4{
+    margin-top: 4rem;
+}
+
+.mb-4{
+    margin-bottom: 4rem;
+}
+
