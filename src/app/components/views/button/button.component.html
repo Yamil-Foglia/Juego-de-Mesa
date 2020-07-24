@@ -1,0 +1,10 @@
+<div class="d-block d-sm-none">
+    <div class="container-fluid bk-container">
+        <div class="row mt-half">
+            <div class="col ta-c">
+                <img *ngIf="!on" class="image-position-max btn-xl" src="../../../../assets/on.png" (click)="onClick()">
+                <img *ngIf="on" class="image-position-max btn-xl" src="../../../../assets/off.png" (click)="offClick()">
+            </div>
+        </div>
+    </div>		
+</div>

@@ -3,6 +3,19 @@
 $fontComfortaa: 'Comfortaa', cursive;
 $fontRussoOne: 'Russo One', sans-serif;
 
+html{
+    background: rgb(149, 149, 149);
+    //background: linear-gradient(rgb(73, 241, 177), yellow);
+    background-repeat:repeat;
+    height: 100%;
+}
+
+body{
+    background: rgba(0, 0, 0, 0);
+    background-repeat:no-repeat;
+    height: 100%;
+}
+
 .image-position{
     width: 200px;
     height: 200px;
@@ -19,11 +32,7 @@ $fontRussoOne: 'Russo One', sans-serif;
 }
 
 .bk-container{
-   background-image: linear-gradient(rgb(73, 241, 177), yellow);
-}
-
-.bk-player{
-    //background:rgba(211, 211, 211, 0.377)
+   background: rgba(0, 0, 0, 0);
 }
 
 .btn-ready{
@@ -50,6 +59,11 @@ h4{
 
 .ta-l{
     text-align: left;
+}
+
+
+.mt-half{
+    margin-top: 50%;
 }
 
 .mt-4{
