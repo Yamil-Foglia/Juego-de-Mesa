@@ -1,8 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { AngularFireModule } from '@angular/fire';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFirestoreModule, AngularFirestore } from 'angularfire2/firestore';
+import { AngularFireFunctionsModule } from '@angular/fire/functions';
 import { firebaseConfig } from 'src/environments/environment';
-import { AngularFirestoreModule, AngularFirestore } from '@angular/fire/firestore';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,10 +22,13 @@ import { ButtonComponent } from './components/views/button/button.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFirestoreModule,
+    AngularFireFunctionsModule,
   ],
-  providers: [],
+  providers: [AngularFirestore],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

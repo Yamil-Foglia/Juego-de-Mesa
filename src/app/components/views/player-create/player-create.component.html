@@ -1,11 +1,9 @@
 <!-- for PC -->
 <div class="d-none d-sm-block">
-	<div class="container-fluid bk-container">
-        <h1>hola</h1>
-	</div>
+	<div class="container-fluid bk-container"></div>
 </div>
 
-<div class="d-block d-sm-none">
+<div class="d-block d-sm-none" [formGroup]="playerForm">
 	<div class="container-fluid bk-container">
 		<div class="row">
 			<div class="col-12">
@@ -51,13 +49,13 @@
 					<div class="input-group-prepend">
 					  <span class="input-group-text" id="inputGroup-sizing-default">Nombre</span>
 					</div>
-						<input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+						<input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" formControlName="name">
 				  </div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-12 btn-ready">
-				<button type="button" class="btn btn-light btn-lg btn-block">Listo</button>
+				<button type="button" class="btn btn-light btn-lg btn-block" [disabled]="!teamApplicationForm.valid" (click)="add()">Listo</button>
 			</div>
 		</div>
 	</div>		
